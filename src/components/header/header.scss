@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+header {
+   height: 75vh;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   z-index: 1;
+   position: relative;
+
+   .header-side {
+      width: 100%;
+      height: 100%;
+      background: url('../../assets/bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      mask-image: linear-gradient(to top, transparent, rgba(0, 0, 0, .013)8.1%, rgba(0, 0, 0, .049)15.5%, rgba(0, 0, 0, .104)22.5%, rgba(0, 0, 0, .175)29%, rgba(0, 0, 0, .259)35.3%, rgba(0, 0, 0, .352)41.2%, rgba(0, 0, 0, .45)47.1%, rgba(0, 0, 0, .55)52.9%, rgba(0, 0, 0, .648)58.8%, rgba(0, 0, 0, .741)64.7%, rgba(0, 0, 0, .825)71%, rgba(0, 0, 0, .896)77.5%, rgba(0, 0, 0, .951)84.5%, rgba(0, 0, 0, .987)91.9%, #000);
+      -webkit-mask-image: linear-gradient(to top, transparent, rgba(0, 0, 0, .013)8.1%, rgba(0, 0, 0, .049)15.5%, rgba(0, 0, 0, .104)22.5%, rgba(0, 0, 0, .175)29%, rgba(0, 0, 0, .259)35.3%, rgba(0, 0, 0, .352)41.2%, rgba(0, 0, 0, .45)47.1%, rgba(0, 0, 0, .55)52.9%, rgba(0, 0, 0, .648)58.8%, rgba(0, 0, 0, .741)64.7%, rgba(0, 0, 0, .825)71%, rgba(0, 0, 0, .896)77.5%, rgba(0, 0, 0, .951)84.5%, rgba(0, 0, 0, .987)91.9%, #000);
+      opacity: .4;
+   }
+   .header-content {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      text-align: center;
+
+      h2 {
+         color: #fff;
+         font-family: 'EB Garamond', serif;
+         font-size: 80px;
+         font-weight: bold;
+         font-style: italic;
+      }
+      h4 {
+         font-size: 32px;
+         font-weight: bold;
+         font-family: 'Varela', sans-serif;
+         color: #fff;
+         font-style: italic;
+         margin-block: 40px;
+      }
+      button {
+         font-size: 14px;
+         font-weight: 700;
+         font-family: 'Nunito', sans-serif;
+         background: #14ae9c;
+         border-radius: 50px;
+         border: 0;
+         padding: 15px 22px;
+         color: #fff;
+         outline: none;
+         transition: all 300ms ease;
+         &:hover {
+            background: #0F8275;
+         }
+      }
+   }
+}
+@media screen and (max-width: 1200px) {
+   header .header-content h2 {
+      font-size: 60px;
+   }
+   header .header-content h4 {
+      font-size: 28px;
+   }
+}
+@media screen and (max-width: 768px) {
+   header .header-content h2 {
+      font-size: 32px;
+   }
+   header .header-content h4 {
+      font-size: 16px;
+   }
+}
