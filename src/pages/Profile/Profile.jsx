@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react';
+import { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import SideBar from '../../components/sidebar/Sidebar';
 import './profile.scss';
@@ -7,6 +8,10 @@ import './profile.scss';
 const Profile = ({ userMe }) => {
 
    const [postImage, setPostImage] = useState(null);
+
+   if(!window.localStorage.getItem('user_token')) {
+      window.location.href = '/';
+   }
 
    const deleteAccount = async () => {
       const alert = window.confirm('Do you want to delete this user?');
