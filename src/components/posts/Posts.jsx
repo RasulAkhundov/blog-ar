@@ -11,7 +11,7 @@ const Posts = ({ posts }) => {
                posts && posts.map((post, i) => (
                   <div className="col-12 col-sm-6 col-xl-4 mb-4" key={i}>
                      <div className="single-post">
-                        <a href={`/post/${post._id}`}><div className="single-post-image" style={{ background: `url(${require('../../../../backend/uploads/post-images' + post.image)})`}}></div></a>
+                        <a href={`/post/${post._id}`}><div className="single-post-image" style={{ background: `url(${require('../../../public/uploads/post-images/' + post.image)})`}}></div></a>
                         <div className="post-content">
                            <div className="post-info">
                               <div className="post-watch-count">
